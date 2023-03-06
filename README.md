@@ -22,9 +22,11 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+## Description This Project
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=WalissonRodrigo_crud-with-jwt-in-nestjs-and-swagger&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=WalissonRodrigo_crud-with-jwt-in-nestjs-and-swagger)
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Created using [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository. Running database SQLite using ORM [Prisma](https://github.com/prisma/prisma) to manager Data Base.
+Using JWT Token in CRUD operations all data are be manipulated using [Swagger](http://localhost:3000/) locally after running the server.
 
 ## Installation
 
@@ -34,7 +36,7 @@ $ npm install
 ## Create and Migrate your database SQLite
 ```bash
 #run migrations files and database file
-$ npx prisma migrate dev init
+$ npx prisma migrate dev <<< create_team_member_table
 
 #run prisma generation to map your entities
 $ npx prisma generate
@@ -53,6 +55,8 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+After running server open your browser and navigate to [http://localhost:3000](http://localhost:3000) to use Swagger local
+
 ## Test
 
 ```bash
@@ -66,16 +70,16 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-## Support
+## Support for NestJS
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
-## Stay in touch
+### Stay in touch
 
 - Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
 - Website - [https://nestjs.com](https://nestjs.com/)
 - Twitter - [@nestframework](https://twitter.com/nestframework)
 
-## License
+### License
 
 Nest is [MIT licensed](LICENSE).
