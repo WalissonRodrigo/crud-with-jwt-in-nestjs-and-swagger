@@ -17,7 +17,7 @@ export class AppController {
   @UseGuards(LocalAuthGuard)
   @Post('auth/login')
   @ApiTags('Login')
-  @ApiOperation({ summary: 'Authenticate with usernam and password' })
+  @ApiOperation({ summary: 'Authentication JWT using username and password' })
   @ApiResponse({
     status: 200,
     description:

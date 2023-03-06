@@ -18,10 +18,11 @@ async function bootstrap() {
     }),
   );
   const config = new DocumentBuilder()
-    .setTitle('Team Members')
-    .setDescription('Team Members API description')
+    .setTitle('CRUD Team Members')
+    .setDescription(
+      'Simple CRUD of Team Members using JWT Token to authorize requests on server',
+    )
     .setVersion('1.0')
-    .addTag('team members')
     .addBearerAuth(
       {
         type: 'http',
